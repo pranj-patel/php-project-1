@@ -1,0 +1,212 @@
+*{margin:0px;padding:0px;box-sizing: border-box}
+:root{
+    --content-width:960px;
+    --primary:#2c76ca;
+    --secondary:#2d3436;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nanum Gothic', sans-serif;
+    background-color: #f0f0f0;
+}
+
+.header {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 10px 0;
+}
+
+.nav-container{
+    max-width: var(--content-width);
+    margin:0px auto;
+    padding:10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+    
+a{transition: color 0.2s;text-decoration: none;color:var(--secondary)}
+a.active,a:hover{color:var(--primary) !important}
+
+.logo img{max-width: 200px}
+
+.header a {
+    color: #ffffff;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+.container {
+    max-width: var(--content-width);
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    min-height:90vh;
+    /* border-radius: 5px; */
+    /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); */
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+    color: #333333;
+}
+
+p {
+    margin: 10px 0;
+    color: #555555;
+}
+/* Styling for the heading container */
+.heading-container {
+    background-color: var(--secondary);
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Styling for the heading text */
+.heading-title {
+    color: #ffffff !important;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* Styling for the subheading text */
+.subheading {
+    font-size: 18px;
+    opacity: 0.8;
+}
+
+
+  /* Styling for individual posts */
+  .post {
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    margin-top: 10px;
+    display:flex;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    position: relative;
+    padding:15px;
+}
+
+/* Styling for post title */
+.post-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Styling for author name */
+.post-author {
+    color: #555555;
+    font-weight: bold;
+    font-size: 12px !important;
+    padding-left:5px;
+}
+
+
+ /* Styling for the post creation section */
+ .post-create {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #ffffff;
+    position: relative;
+}
+#createPostForm{margin-top:20px;}
+/* Styling for the expand/collapse button */
+.toggle-button {
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 10px;
+    color: #333333;
+    position: absolute;
+    top:10px;
+    right:10px;
+    font-size: 24px;
+    color: var(--secondary);
+}
+
+/* Styling for form fields */
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Styling for submit button */
+button[type="submit"] {
+    background-color: #004e81;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: var(--secondary);
+}
+
+.alert {
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.alert-danger {
+    background-color: #f8d7da !important;
+    color: #721c24 !important;
+    border: 1px solid #f5c6cb !important;
+}
+
+.alert-success {
+    background-color: #d7f8e2 !important;
+    color: #19a04d !important;
+    border: 1px solid #d7f8e2 !important;
+}
+
+.post .image{
+    width: 200px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 5px;
+    margin-right: 15px;
+}
+
+.post .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.post_content{
+    width: 100%;
+}
+
+.post_meta{display: flex;align-items: center;justify-content: space-between;color:#999999;font-size: 14px;margin-top:10px}
+
+.text-danger{color:red}
+
+.fa{color:#949494;}
+.fa-heart.active{color:#ff0050}
+.fa-comment.active{color:var(--primary);}
+
+.primary{color: var(--primary)}
+
+.delete_btn{position:absolute;top:10px;right:10px;}
+
+/* .like_comment{margin-top:40px} */
